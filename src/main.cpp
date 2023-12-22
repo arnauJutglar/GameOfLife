@@ -29,7 +29,7 @@
 
 int main(int argc, char const** argv) {
     sf::VideoMode vm(800,600);
-    sf::RenderWindow window(vm, "La meva finestra", sf::Style::None | sf::Style::Titlebar | sf::Style::Close);
+    sf::RenderWindow window(vm, "Conway's Game of Life", sf::Style::None | sf::Style::Titlebar | sf::Style::Close);
         
     sf::Music music;
     if (!music.openFromFile("Resources/Music/rick_and_morty.ogg")) {return EXIT_FAILURE;}
