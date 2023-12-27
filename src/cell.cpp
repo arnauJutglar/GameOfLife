@@ -119,7 +119,7 @@ void Cell::updateLife(std::vector<Cell>& ptr, int x_pos, int y_pos, int rows, in
     // Bottom edge
     if (y_pos == rows -1) {
         for (int j = y_pos -1; j <= y_pos; j++) {
-            for (int i = x_pos -1; i <= x_pos +1 +1; i++) {
+            for (int i = x_pos -1; i <= x_pos +1; i++) {
                 if (j != y_pos || i != x_pos) {
                     // Check it only for the different cells.
                     if (ptr[j*cols + i].is_alive) {alive++;}

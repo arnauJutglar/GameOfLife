@@ -21,17 +21,13 @@ int main(int argc, char const** argv) {
     sf::Music music;
     if (!music.openFromFile("Resources/Music/rick_and_morty.ogg")) {return EXIT_FAILURE;}
     music.play();
-    
-    sf::CircleShape circle(50);
-    circle.setPosition(30, 30);
-        
+            
     // Grid
     int n = 10;
     if (argc == 1) {
         n = 10;
     } else if (argc == 2) {
         n = atoi(argv[1]);
-        std::cout << n << std::endl;
         if (n < 0 || n > 100) {
             std::cout << "Sizes out of accepted range. Execution aborted." << std::endl;
             return 1;
