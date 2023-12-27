@@ -1,19 +1,6 @@
-
-//
-// Disclaimer:
-// ----------
-//
-// This code will work only if you selected window, graphics and audio.
-//
-// In order to load the resources like background.png, you have to set up
-// your target scheme:
-//
-// - Select "Edit Scheme…" in the "Product" menu;
-// - Check the box "use custom working directory";
-// - Fill the text field with the folder path containing your resources;
-//        (e.g. your project folder)
-// - Click OK.
-//
+/**
+ It accepts, as a main argument, the size in pixels of the cells.
+ */
 
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
